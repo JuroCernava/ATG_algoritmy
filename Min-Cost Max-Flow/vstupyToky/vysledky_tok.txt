@@ -1,0 +1,472 @@
+Pocet vrcholov: 6
+Pocet orientovanych hran: 8
+Orientovane hrany: 
+(1,2): c(h)=4, d(h)=5
+(1,3): c(h)=7, d(h)=8
+(2,4): c(h)=5, d(h)=9
+(2,5): c(h)=4, d(h)=3
+(3,4): c(h)=8, d(h)=2
+(4,6): c(h)=9, d(h)=7
+(5,4): c(h)=9, d(h)=1
+(5,6): c(h)=6, d(h)=2
+
+
+
+Hladam zvacsujucu polocestu:
+Riadiaci vrchol: 1
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (1,2) nie je nasytena, oznacim vrchol 2: +1
+  (1,3) nie je nasytena, oznacim vrchol 3: +1
+Hrany vchadzajuce do riadiaceho vrcholu: 
+***
+Riadiaci vrchol: 2
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (2,4) nie je nasytena, oznacim vrchol 4: +2
+  (2,5) nie je nasytena, oznacim vrchol 5: +2
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,2) ma nulovy tok, v opacnom smere sa neda pouzit.
+***
+Riadiaci vrchol: 3
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (3,4) nie je nasytena, ale vrchol 4 uz ma znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,3) ma nulovy tok, v opacnom smere sa neda pouzit.
+***
+Riadiaci vrchol: 4
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (4,6) nie je nasytena, oznacim vrchol 6: +4
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (2,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+  (3,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+  (5,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+***
+Ustie bolo oznacene, nasiel som zvacsujucu polocestu!
+
+
+
+Pocitam rezervu polocesty:
+Rezerva hrany (4,6) je 9
+Rezerva hrany (2,4) je 5
+Rezerva hrany (1,2) je 4
+Rezerva polocesty je 4
+
+
+
+Upravujem tok na poloceste o rezervu 4:
+Upravujem tok hranou (4,6) z 0 na 4
+Upravujem tok hranou (2,4) z 0 na 4
+Upravujem tok hranou (1,2) z 0 na 4
+
+
+
+Tok v sieti:
+Hrana (1,2): Tok = 4(4), Cena = 5 * 4 = 20
+Hrana (1,3): Tok = 0(7), Cena = 8 * 0 = 0
+Hrana (2,4): Tok = 4(5), Cena = 9 * 4 = 36
+Hrana (2,5): Tok = 0(4), Cena = 3 * 0 = 0
+Hrana (3,4): Tok = 0(8), Cena = 2 * 0 = 0
+Hrana (4,6): Tok = 4(9), Cena = 7 * 4 = 28
+Hrana (5,4): Tok = 0(9), Cena = 1 * 0 = 0
+Hrana (5,6): Tok = 0(6), Cena = 2 * 0 = 0
+Velkost toku: 4
+Cena toku: 84
+
+
+
+Hladam zvacsujucu polocestu:
+Riadiaci vrchol: 1
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (1,2) je nasytena.
+  (1,3) nie je nasytena, oznacim vrchol 3: +1
+Hrany vchadzajuce do riadiaceho vrcholu: 
+***
+Riadiaci vrchol: 3
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (3,4) nie je nasytena, oznacim vrchol 4: +3
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,3) ma nulovy tok, v opacnom smere sa neda pouzit.
+***
+Riadiaci vrchol: 4
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (4,6) nie je nasytena, oznacim vrchol 6: +4
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (2,4) ma nenulovy tok, oznacim vrchol 2: -4
+  (3,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+  (5,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+***
+Ustie bolo oznacene, nasiel som zvacsujucu polocestu!
+
+
+
+Pocitam rezervu polocesty:
+Rezerva hrany (4,6) je 5
+Rezerva hrany (3,4) je 8
+Rezerva hrany (1,3) je 7
+Rezerva polocesty je 5
+
+
+
+Upravujem tok na poloceste o rezervu 5:
+Upravujem tok hranou (4,6) z 4 na 9
+Upravujem tok hranou (3,4) z 0 na 5
+Upravujem tok hranou (1,3) z 0 na 5
+
+
+
+Tok v sieti:
+Hrana (1,2): Tok = 4(4), Cena = 5 * 4 = 20
+Hrana (1,3): Tok = 5(7), Cena = 8 * 5 = 40
+Hrana (2,4): Tok = 4(5), Cena = 9 * 4 = 36
+Hrana (2,5): Tok = 0(4), Cena = 3 * 0 = 0
+Hrana (3,4): Tok = 5(8), Cena = 2 * 5 = 10
+Hrana (4,6): Tok = 9(9), Cena = 7 * 9 = 63
+Hrana (5,4): Tok = 0(9), Cena = 1 * 0 = 0
+Hrana (5,6): Tok = 0(6), Cena = 2 * 0 = 0
+Velkost toku: 9
+Cena toku: 169
+
+
+
+Hladam zvacsujucu polocestu:
+Riadiaci vrchol: 1
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (1,2) je nasytena.
+  (1,3) nie je nasytena, oznacim vrchol 3: +1
+Hrany vchadzajuce do riadiaceho vrcholu: 
+***
+Riadiaci vrchol: 3
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (3,4) nie je nasytena, oznacim vrchol 4: +3
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,3) ma nenulovy tok, ale vrchol 1 uz ma znacku.
+***
+Riadiaci vrchol: 4
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (4,6) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (2,4) ma nenulovy tok, oznacim vrchol 2: -4
+  (3,4) ma nenulovy tok, ale vrchol 3 uz ma znacku.
+  (5,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+***
+Riadiaci vrchol: 2
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (2,4) nie je nasytena, ale vrchol 4 uz ma znacku.
+  (2,5) nie je nasytena, oznacim vrchol 5: +2
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,2) ma nenulovy tok, ale vrchol 1 uz ma znacku.
+***
+Riadiaci vrchol: 5
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (5,4) nie je nasytena, ale vrchol 4 uz ma znacku.
+  (5,6) nie je nasytena, oznacim vrchol 6: +5
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (2,5) ma nulovy tok, v opacnom smere sa neda pouzit.
+***
+Ustie bolo oznacene, nasiel som zvacsujucu polocestu!
+
+
+
+Pocitam rezervu polocesty:
+Rezerva hrany (5,6) je 6
+Rezerva hrany (2,5) je 4
+Rezerva hrany (2,4) v protismere je 4
+Rezerva hrany (3,4) je 3
+Rezerva hrany (1,3) je 2
+Rezerva polocesty je 2
+
+
+
+Upravujem tok na poloceste o rezervu 2:
+Upravujem tok hranou (5,6) z 0 na 2
+Upravujem tok hranou (2,5) z 0 na 2
+Upravujem tok hranou (2,4) v protismere z 4 na 2
+Upravujem tok hranou (3,4) z 5 na 7
+Upravujem tok hranou (1,3) z 5 na 7
+
+
+
+Tok v sieti:
+Hrana (1,2): Tok = 4(4), Cena = 5 * 4 = 20
+Hrana (1,3): Tok = 7(7), Cena = 8 * 7 = 56
+Hrana (2,4): Tok = 2(5), Cena = 9 * 2 = 18
+Hrana (2,5): Tok = 2(4), Cena = 3 * 2 = 6
+Hrana (3,4): Tok = 7(8), Cena = 2 * 7 = 14
+Hrana (4,6): Tok = 9(9), Cena = 7 * 9 = 63
+Hrana (5,4): Tok = 0(9), Cena = 1 * 0 = 0
+Hrana (5,6): Tok = 2(6), Cena = 2 * 2 = 4
+Velkost toku: 11
+Cena toku: 181
+
+
+
+Hladam zvacsujucu polocestu:
+Riadiaci vrchol: 1
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (1,2) je nasytena.
+  (1,3) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+***
+Mnozina E je prazdna, zvacsujuca polocesta neexistuje!
+
+
+
+*** Vysledny maximalny tok ***
+Tok v sieti:
+Hrana (1,2): Tok = 4(4), Cena = 5 * 4 = 20
+Hrana (1,3): Tok = 7(7), Cena = 8 * 7 = 56
+Hrana (2,4): Tok = 2(5), Cena = 9 * 2 = 18
+Hrana (2,5): Tok = 2(4), Cena = 3 * 2 = 6
+Hrana (3,4): Tok = 7(8), Cena = 2 * 7 = 14
+Hrana (4,6): Tok = 9(9), Cena = 7 * 9 = 63
+Hrana (5,4): Tok = 0(9), Cena = 1 * 0 = 0
+Hrana (5,6): Tok = 2(6), Cena = 2 * 2 = 4
+Velkost toku: 11
+Cena toku: 181
+
+
+
+Hladam rezervny polocyklus so zapornou cenou:
+Riadiaci vrchol: 1
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (1,2) je nasytena.
+  (1,3) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+***
+Riadiaci vrchol: 2
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (2,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+  (2,5) nie je nasytena, ale vrchol 5 uz ma lepsiu znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,2) ma nenulovy tok, oznacim vrchol 1: -5|-2
+    Kontrolujem znacky, ci uz nemam cyklus: 1,2
+***
+Riadiaci vrchol: 3
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (3,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,3) ma nenulovy tok, oznacim vrchol 1: -8|-3
+    Kontrolujem znacky, ci uz nemam cyklus: 1,3
+***
+Riadiaci vrchol: 4
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (4,6) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (2,4) ma nenulovy tok, oznacim vrchol 2: -9|-4
+    Kontrolujem znacky, ci uz nemam cyklus: 2,4
+  (3,4) ma nenulovy tok, oznacim vrchol 3: -2|-4
+    Kontrolujem znacky, ci uz nemam cyklus: 3,4
+  (5,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+***
+Riadiaci vrchol: 5
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (5,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+  (5,6) nie je nasytena, ale vrchol 6 uz ma lepsiu znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (2,5) ma nenulovy tok, ale vrchol 2 uz ma lepsiu znacku.
+***
+Riadiaci vrchol: 6
+Hrany vychadzajuce z riadiaceho vrcholu: 
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (4,6) ma nenulovy tok, oznacim vrchol 4: -7|-6
+    Kontrolujem znacky, ci uz nemam cyklus: 4,6
+  (5,6) ma nenulovy tok, oznacim vrchol 5: -2|-6
+    Kontrolujem znacky, ci uz nemam cyklus: 5,6
+***
+Riadiaci vrchol: 1
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (1,2) je nasytena.
+  (1,3) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+***
+Riadiaci vrchol: 2
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (2,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+  (2,5) nie je nasytena, oznacim vrchol 5: -6|+2
+    Kontrolujem znacky, ci uz nemam cyklus: 5,2,4,6
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,2) ma nenulovy tok, oznacim vrchol 1: -14|-2
+    Kontrolujem znacky, ci uz nemam cyklus: 1,2,4,6
+***
+Riadiaci vrchol: 3
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (3,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,3) ma nenulovy tok, ale vrchol 1 uz ma lepsiu znacku.
+***
+Riadiaci vrchol: 4
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (4,6) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (2,4) ma nenulovy tok, oznacim vrchol 2: -16|-4
+    Kontrolujem znacky, ci uz nemam cyklus: 2,4,6
+  (3,4) ma nenulovy tok, oznacim vrchol 3: -9|-4
+    Kontrolujem znacky, ci uz nemam cyklus: 3,4,6
+  (5,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+***
+Riadiaci vrchol: 5
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (5,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+  (5,6) nie je nasytena, oznacim vrchol 6: -4|+5
+    Kontrolujem znacky, ci uz nemam cyklus: 6,5,2,4,6 ... a mam rezervny polocyklus so zapornou cenou!
+
+
+
+Pocitam rezervu polocyklu so zaciatkom v 6:
+Rezerva hrany (5,6) je 4
+Rezerva hrany (2,5) je 2
+Rezerva hrany (2,4) v protismere je 2
+Rezerva hrany (4,6) v protismere je 9
+Rezerva polocyklu je 2
+Cena polocyklu je -11
+
+
+
+Upravujem tok na polocykle so zaciatkom 6 o rezervu 2:
+Upravujem tok hranou (5,6) z 2 na 4
+Upravujem tok hranou (2,5) z 2 na 4
+Upravujem tok hranou (2,4) v protismere z 2 na 0
+Upravujem tok hranou (4,6) v protismere z 9 na 7
+
+
+
+Tok v sieti:
+Hrana (1,2): Tok = 4(4), Cena = 5 * 4 = 20
+Hrana (1,3): Tok = 7(7), Cena = 8 * 7 = 56
+Hrana (2,4): Tok = 0(5), Cena = 9 * 0 = 0
+Hrana (2,5): Tok = 4(4), Cena = 3 * 4 = 12
+Hrana (3,4): Tok = 7(8), Cena = 2 * 7 = 14
+Hrana (4,6): Tok = 7(9), Cena = 7 * 7 = 49
+Hrana (5,4): Tok = 0(9), Cena = 1 * 0 = 0
+Hrana (5,6): Tok = 4(6), Cena = 2 * 4 = 8
+Velkost toku: 11
+Cena toku: 159
+
+
+
+Hladam rezervny polocyklus so zapornou cenou:
+Riadiaci vrchol: 1
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (1,2) je nasytena.
+  (1,3) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+***
+Riadiaci vrchol: 2
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (2,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+  (2,5) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,2) ma nenulovy tok, oznacim vrchol 1: -5|-2
+    Kontrolujem znacky, ci uz nemam cyklus: 1,2
+***
+Riadiaci vrchol: 3
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (3,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,3) ma nenulovy tok, oznacim vrchol 1: -8|-3
+    Kontrolujem znacky, ci uz nemam cyklus: 1,3
+***
+Riadiaci vrchol: 4
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (4,6) nie je nasytena, ale vrchol 6 uz ma lepsiu znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (2,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+  (3,4) ma nenulovy tok, oznacim vrchol 3: -2|-4
+    Kontrolujem znacky, ci uz nemam cyklus: 3,4
+  (5,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+***
+Riadiaci vrchol: 5
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (5,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+  (5,6) nie je nasytena, ale vrchol 6 uz ma lepsiu znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (2,5) ma nenulovy tok, oznacim vrchol 2: -3|-5
+    Kontrolujem znacky, ci uz nemam cyklus: 2,5
+***
+Riadiaci vrchol: 6
+Hrany vychadzajuce z riadiaceho vrcholu: 
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (4,6) ma nenulovy tok, oznacim vrchol 4: -7|-6
+    Kontrolujem znacky, ci uz nemam cyklus: 4,6
+  (5,6) ma nenulovy tok, oznacim vrchol 5: -2|-6
+    Kontrolujem znacky, ci uz nemam cyklus: 5,6
+***
+Riadiaci vrchol: 1
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (1,2) je nasytena.
+  (1,3) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+***
+Riadiaci vrchol: 3
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (3,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,3) ma nenulovy tok, oznacim vrchol 1: -10|-3
+    Kontrolujem znacky, ci uz nemam cyklus: 1,3,4,6
+***
+Riadiaci vrchol: 2
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (2,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+  (2,5) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,2) ma nenulovy tok, ale vrchol 1 uz ma lepsiu znacku.
+***
+Riadiaci vrchol: 4
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (4,6) nie je nasytena, ale vrchol 6 uz ma lepsiu znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (2,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+  (3,4) ma nenulovy tok, oznacim vrchol 3: -9|-4
+    Kontrolujem znacky, ci uz nemam cyklus: 3,4,6
+  (5,4) ma nulovy tok, v opacnom smere sa neda pouzit.
+***
+Riadiaci vrchol: 5
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (5,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+  (5,6) nie je nasytena, ale vrchol 6 uz ma lepsiu znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (2,5) ma nenulovy tok, oznacim vrchol 2: -5|-5
+    Kontrolujem znacky, ci uz nemam cyklus: 2,5,6
+***
+Riadiaci vrchol: 1
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (1,2) je nasytena.
+  (1,3) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+***
+Riadiaci vrchol: 3
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (3,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,3) ma nenulovy tok, oznacim vrchol 1: -17|-3
+    Kontrolujem znacky, ci uz nemam cyklus: 1,3,4,6
+***
+Riadiaci vrchol: 2
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (2,4) nie je nasytena, ale vrchol 4 uz ma lepsiu znacku.
+  (2,5) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+  (1,2) ma nenulovy tok, ale vrchol 1 uz ma lepsiu znacku.
+***
+Riadiaci vrchol: 1
+Hrany vychadzajuce z riadiaceho vrcholu: 
+  (1,2) je nasytena.
+  (1,3) je nasytena.
+Hrany vchadzajuce do riadiaceho vrcholu: 
+***
+Mnozina E je prazdna, rezervny polocyklus so zapornou cenou neexistuje!
+
+
+
+*** Vysledny maximalny tok s minimalnou cenou ***
+Tok v sieti:
+Hrana (1,2): Tok = 4(4), Cena = 5 * 4 = 20
+Hrana (1,3): Tok = 7(7), Cena = 8 * 7 = 56
+Hrana (2,4): Tok = 0(5), Cena = 9 * 0 = 0
+Hrana (2,5): Tok = 4(4), Cena = 3 * 4 = 12
+Hrana (3,4): Tok = 7(8), Cena = 2 * 7 = 14
+Hrana (4,6): Tok = 7(9), Cena = 7 * 7 = 49
+Hrana (5,4): Tok = 0(9), Cena = 1 * 0 = 0
+Hrana (5,6): Tok = 4(6), Cena = 2 * 4 = 8
+Velkost toku: 11
+Cena toku: 159
+
